@@ -1,0 +1,131 @@
+.um-title {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* UserManagement.css */
+
+.user-management-container {
+    padding: 40px;
+    background-color: #f4f8fc;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.um-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #044f18;
+}
+
+.um-content {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* User List Table */
+.user-list {
+    flex: 2;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.um-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.um-table th, .um-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.um-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.um-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Form to add user */
+.add-user-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.form-control {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #e6f7ff;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Subtitles */
+.um-subtitle {
+    font-size: 1.5rem;
+    color: #174900;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .um-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
