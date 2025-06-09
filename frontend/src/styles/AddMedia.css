@@ -1,0 +1,55 @@
+.add-media-container {
+    padding: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #98cf8b;
+}
+
+.add-media-container h1 {
+    color:#000;
+
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.addMedia {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #45a049;
+}
+
+.btn-upload {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-upload:hover {
+    background-color: #45a049;
+}
+
+.upload-status {
+    margin-top: 10px;
+    color: #333;
+}
+
+.radio-group {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-self: center;
+    padding: 2px 6px 2px 6px;
+    border: 0.1px solid black;
+}
+
+.radio-group label {
+    margin-right: 15px;
+    color: #323232;
+}
+ 
