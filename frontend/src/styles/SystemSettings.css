@@ -1,0 +1,87 @@
+/* SystemSettings.css */
+
+.system-settings-container {
+    padding: 40px;
+    background-color: #f9fbfd;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.ss-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1c3faa;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.settings-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-control {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #1c3faa;
+    background-color: #eef3ff;
+}
+
+.checkbox-group label {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: start;
+    font-weight: 500;
+    color: #333;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: #1c3faa;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0e2a7d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .settings-form {
+        padding: 20px;
+    }
+}
