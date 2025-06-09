@@ -1,0 +1,27 @@
+.call-logs-page {
+    padding: 2rem;
+}
+
+.call-logs-page h1 {
+    color:#000;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.call-logs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.call-logs-table th,
+.call-logs-table td {
+    border: 1px solid #a8ff5bcd;
+    padding: 10px;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+audio {
+    width: 100%;
+}
