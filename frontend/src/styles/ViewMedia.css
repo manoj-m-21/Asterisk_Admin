@@ -1,0 +1,147 @@
+.view-media-container {
+    padding: 20px;
+    max-width: 1250px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.media-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.media-table th, .media-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.media-table th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-play, .btn-stop {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+/* .btn-play {
+    background-color: #2196f3;
+}
+
+.btn-stop {
+    background-color: #f44336;
+}
+
+
+
+.btn-stop:hover {
+    background-color: #d32f2f;
+} */
+
+
+.view-media-container h1 {
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.btn-stop, .btn-play, .btn-delete, .btn-download {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-stop, .btn-play {
+    background-color: #28A745;
+}
+
+.btn-play:hover {
+    background-color: #22ce4a;
+}
+
+.btn-delete {
+    background-color: #DC3545;
+}
+
+.btn-delete:hover {
+    background-color: #f42035;
+}
+
+.btn-download {
+    background-color: #17A2B8;
+}
+
+.btn-download:hover {
+    background-color: #07c3e0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+}
+
+.tab-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.media-files-container {
+    margin-top: 20px;
+}
+
+.media-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.media-table th, .media-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn-play, .btn-stop, .btn-delete, .btn-download {
+    margin-right: 10px;
+}
