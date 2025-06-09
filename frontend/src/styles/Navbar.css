@@ -1,0 +1,277 @@
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05);
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    /* background: linear-gradient(to bottom right, #044f18, #1a973b, #2c5364); */
+    background-color: #044f18;
+    box-shadow: 0 4px 10px rgba(71, 255, 47, 0.5);
+    color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+/* Left Side of Navbar */
+.leftside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftside h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Right Side of Navbar */
+.rightside {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Menu Button */
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn:hover {
+    color: rgb(0, 255, 162);
+}
+
+/* Search Bar */
+.search-bar {
+    padding: 8px 15px;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    background-color: #000000;
+    color: #eeeeee;
+}
+
+.search-bar::placeholder {
+    color: #f7f7f7;
+}
+
+.search-bar:focus {
+    border-color: #34d399;
+    box-shadow: 0 0 5px rgba(52, 211, 153, 0.8);
+    background-color: white;
+    color: #000;
+}
+
+.search-bar:click {
+    background-color: white;
+}
+
+/* Icon Button */
+.icon-btn {
+    background: #000000;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.icon-btn:hover {
+    background: #00ad1d;
+    color: #eeeeee;
+    transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #f71313;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logout-btn:hover {
+    background: #f71313e1;
+    color: #eeeeee;
+    transform: translateY(-2px);
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay when menu is open */
+.menu-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Side Menu */
+.side-menu {
+    text-align: left;
+    height: calc(100% - 75px);
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 75px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    border-bottom: 1px solid #1a973c;
+    border-top: 1px solid #1a973c;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Side Menu Links */
+.side-menu a {
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+    background-color: rgba(26, 151, 60, 0.1);
+}
+
+/* Open Sidebar */
+.side-menu.open {
+    width: 250px;
+}
+
+/* Side Menu List */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #1a973c;
+}
+
+.side-menu li {
+    padding: 0;
+}
+
+.side-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.side-menu li a:hover {
+    color: #73fb97;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+/* Section Headers in Side Menu */
+.side-menu h4 {
+    color: #73fb97;
+    margin: 15px 15px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        min-height: 60px;
+        padding: 10px;
+    }
+
+    .rightside {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .icon-btn {
+        font-size: 16px;
+    }
+
+    .logout-btn {
+        width: auto;
+        padding: 8px 15px;
+    }
+
+    .side-menu.open {
+        width: 100%;
+    }
+}
