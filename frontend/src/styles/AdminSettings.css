@@ -1,0 +1,92 @@
+/* Admin Settings Page Styles */
+.admin-settings-container {
+    max-width: 800px;
+    width: 600px;
+    
+    margin-top: 50px;
+    justify-self: center;
+    padding: 20px;
+    border: 1px solid #437601;
+    border-radius: 8px;
+    background-color: #0a1240a8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.email-notifications {
+    color: black;
+    text-align: center;
+}
+
+.admin-settings-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.btn-save {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-save:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.settings-section h3 {
+    color: #ffffff;
+}
+
+.username-update {
+    width: 190px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 24px;
+    margin-bottom: 12px;
+}
+
+.password-update {
+    width: 190px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 24px;
+    margin-bottom: 12px;
+}
