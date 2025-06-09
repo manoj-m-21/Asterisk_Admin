@@ -1,0 +1,172 @@
+/* Container for entire extension form */
+.extension-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Full form layout */
+.form-full-screen {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+/* Title */
+.form-full-screen h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 2px;
+}
+
+/* Split form layout */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left side - inputs */
+.form-left {
+    flex: 1;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1px;
+    width: fit-content;
+}
+
+/* Right side - profile image */
+.form-right {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 75px;
+}
+
+/* Profile image */
+.profile-img {
+    width: 270px;
+    height: 300px;
+    /* object-fit: cover; */
+    border: 3px solid #007bff;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: #0056b3;
+}
+
+/* Form input container */
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.form-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+    font-weight: 600;
+}
+
+/* Inputs */
+.form-control {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    color: #000;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #e6f7ff;
+}
+
+/* Buttons */
+button {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    margin-left: 12px;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Required asterisk */
+.required-asterisk::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-right {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .form-control {
+        max-width: 100%;
+    }
+
+    .form-full-screen {
+        padding: 20px;
+    }
+
+    .form-full-screen h2 {
+        font-size: 1.5rem;
+    }
+}
