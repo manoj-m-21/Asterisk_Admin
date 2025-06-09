@@ -1,0 +1,78 @@
+.recordings-container {
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+.recordings-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+
+.recordings-table-wrapper {
+  overflow-x: auto;
+}
+
+.recordings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recordings-table th,
+.recordings-table td {
+  border: 1px solid #20c64c;
+  padding: 12px;
+  text-align: left;
+}
+
+.recordings-table th {
+  background-color: #002e0c;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.recordings-table tr:nth-child(even) {
+  background-color: #75f37e;
+  color: #252525;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.recordings-table tr:nth-child(odd) {
+  background-color: #c9ffb9;
+  color: #252525;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.play-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: #45a049;
+}
+
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 2px;
+}
