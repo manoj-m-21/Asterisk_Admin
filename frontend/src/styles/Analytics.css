@@ -1,0 +1,97 @@
+.analytics-container {
+  padding: 24px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.analytics-container h1 {
+  margin-bottom: 24px;
+  color: #000;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.stats-row .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stats-row .ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.charts-row {
+  margin-bottom: 24px;
+}
+
+.charts-row .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.charts-row .ant-card .recharts-wrapper {
+  margin: 0 auto;
+}
+
+.charts-row .ant-card .recharts-legend-wrapper {
+  padding-top: 10px;
+}
+
+.table-row .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.status-completed {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.status-failed {
+  color: #ff4d4f;
+  font-weight: 500;
+}
+
+.status-pending {
+  color: #faad14;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .analytics-container {
+    padding: 16px;
+  }
+
+  .stats-row .ant-card {
+    margin-bottom: 16px;
+  }
+
+  .charts-row .ant-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* Animation for loading state */
+.ant-card-loading {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
