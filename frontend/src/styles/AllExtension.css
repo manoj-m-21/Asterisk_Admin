@@ -1,0 +1,122 @@
+/* AllExtension Styles */
+.container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 200px;
+}
+
+h3 {
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table thead {
+    background: linear-gradient(to right, #044f18, #1a973c);
+    color: white;
+}
+
+.table th {
+    padding: 1rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+/* Copy Button Styles */
+.btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-light:hover {
+    background-color: #e9ecef;
+    transform: translateY(-1px);
+}
+
+.btn-sm {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.ms-2 {
+    margin-left: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+    }
+
+    /* Make table more compact on mobile */
+    .btn-sm {
+        padding: 0.2rem 0.4rem;
+    }
+}
+
+/* Empty State */
+.table tbody:empty::after {
+    content: "No extensions found";
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+}
+
+/* Error State */
+.error {
+    color: #dc3545;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    margin: 1rem 0;
+} 
