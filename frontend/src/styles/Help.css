@@ -1,0 +1,166 @@
+/* Help Page Styles */
+.help-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    /* color: #333; */
+}
+
+.help-container h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.help-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #383838;
+    margin-bottom: 40px;
+}
+
+/* Help Sections */
+.help-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.help-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.help-section:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-header:hover {
+    background: linear-gradient(to right, #e9ecef, #dee2e6);
+}
+
+.section-header.active {
+    background: linear-gradient(to right, #044f18, #1a973c);
+    color: white;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-icon {
+    font-size: 1.5rem;
+    color: #044f18;
+}
+
+.section-header.active .section-icon {
+    color: white;
+}
+
+.section-title h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.section-toggle {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Section Content */
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    background-color: white;
+}
+
+.section-content.active {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+.section-content h3 {
+    color: #044f18;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.section-content h4 {
+    color: #1a973c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.section-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.section-content ul, .section-content ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.section-content li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Help Footer */
+.help-footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    color: #383838;
+}
+
+.help-footer a {
+    color: #0009b4;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.help-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .help-container {
+        padding: 20px 15px;
+    }
+
+    .help-container h1 {
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.1rem;
+    }
+
+    .section-content {
+        padding: 15px;
+    }
+} 
